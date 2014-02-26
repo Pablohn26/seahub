@@ -12,6 +12,11 @@
     <li>
         <a href="{{ SITE_ROOT }}sys/useradmin/" {% block nav_useradmin_class %}{% endblock %}>{% trans "Users" %}</a>
     </li>
+    {% if traffic_stats_enabled %}
+    <li>
+        <a href="{{ SITE_ROOT }}sys/trafficadmin/" {% block nav_trafficadmin_class %}{% endblock %}>{% trans "Traffic" %}</a>
+    </li>
+    {% endif %}
     <li>
         <a href="{{ SITE_ROOT }}sys/groupadmin/" {% block nav_groupadmin_class %}{% endblock %}>{% trans "Groups" %}</a>
     </li>
